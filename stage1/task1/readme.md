@@ -45,32 +45,3 @@
 
 [慕课HTML+CSS基础教程视频](http://www.imooc.com/learn/9)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1、考察html5的新标签
-
-![](http://www.html5jscss.com/pic/htmljscss/html5-layout.jpg)
-
-2、一些基本标签的使用
-
-范例代码地址：[https://github.com/jshacker007/ife2016/blob/master/stage1/task1/index.html](https://github.com/jshacker007/ife2016/blob/master/stage1/task1/index.html)
