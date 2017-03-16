@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c80777e-a709-4803-9ad5-51c6b3d0f4cf" name="Default" comment="" />
+    <list default="true" id="1c80777e-a709-4803-9ad5-51c6b3d0f4cf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task5/task5.css" afterPath="$PROJECT_DIR$/task5/task5.css" />
+    </list>
     <ignored path="IFE.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,8 +51,8 @@
           <file leaf-file-name="task5.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/task5/task5.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+                <state relative-caret-position="603">
+                  <caret line="200" column="12" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -249,15 +251,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489565932574</updated>
-      <workItem from="1489565934426" duration="21985000" />
+      <workItem from="1489565934426" duration="22256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21985000" />
+    <option name="totallyTimeSpent" value="22256000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="1038" extended-state="1" />
+    <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -359,14 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task5/task5.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task5/task5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -379,6 +373,14 @@
             <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/task5.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="200" column="12" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
