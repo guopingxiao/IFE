@@ -1,0 +1,70 @@
+html, body,h5{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    padding:20px;
+}
+
+.container{/*overflow用来使父容器的高度根据子容器的高度变化*/
+    background-color: #EEE;
+    border:1px solid #999;
+    padding:20px;
+    min-width: 576px;
+    overflow: auto;
+}
+
+.container, .left, .right, .main{/*用来固定width用的，不用的话 padding值会影响width*/
+    box-sizing: border-box;
+}
+
+.left{
+    float: left;
+    width: 200px;
+    border:1px solid #999;
+    background-color: #FFF;
+    padding:20px;
+}
+
+.leftIcon{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.leftContent{
+    margin-left:100px;
+    text-align: center;
+}
+
+.container img{
+    width: 80px;
+    height:80px;
+}
+
+.right{
+    float: right;
+    width:120px;
+    padding:20px;
+    border:1px solid #999;
+    background-color: #fff;
+    line-height:0;/*line-height 跟下面的东西是为了使每两个图片中间的间距一样*/
+}
+
+.right img{
+    margin-bottom:20px;
+}
+
+.right img:last-child{
+    margin-bottom:0;
+}
+
+.main{
+    margin-left:220px;
+    margin-right:140px;
+    padding:20px;
+    border:1px solid #999;
+    background-color: #fff;
+}
+
