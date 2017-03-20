@@ -1,0 +1,369 @@
+@charset "utf-8";
+/*reset css*/
+body, article, aside, h1, h2, h3, h4, h5, h6, hr, p,dl, dt, dd, ul, ol, li{
+    margin: 0;
+    padding: 0;
+    font-family: "SimHei";
+}
+h1,h2,h3,h4{font: 14px SimHei,'Microsoft YaHei',Helvetica,Arial;font-weight: 400;}
+ul, ol { list-style: none; cursor:default}
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+img { border: 0; }
+mark{background:#ff0;}
+/*css start*/
+
+body{
+    font: 12px 'Microsoft YaHei',Helvetica,Arial;
+    background-color: #CCCCCC;
+}
+/*clear float*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.wrap-box{
+    width: 893px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 40px;
+    border:1px solid #fff;
+}
+
+/*header start*/
+.header-box{
+    border-bottom: 2px solid #938c8c;
+    overflow: hidden;
+    width: 100%;
+}
+.header-left-box{
+    float: left;
+}
+.header-box a{
+    display: block;
+    width: 110px;
+    height: 61px;
+    color: #fff;
+    background: #de5d5c;
+    line-height: 100px;
+}
+.header-box span{
+    float: right;
+    margin-top: 40px;
+    color: #de5d5c;
+}
+
+/*------------main-box----------*/
+.main-box{
+    margin-top:35px;
+    padding-bottom: 42px;
+    border-bottom: 2px solid #938c8c;
+}
+
+/*----------main-top-box----------*/
+.main-top-box{
+    overflow: hidden;
+}
+.article1-left-box{
+    position: relative;
+    float: left;
+    width: 640px;
+}
+.article1-left-box img{
+    width:640px;
+    height: 300px;
+}
+.cover1{
+    background: #75deb1;
+    left:0;
+}
+.cover2{
+    background: #cc8091;
+    right: 0;
+}
+.cover3{
+    display: block;
+    width: 190px;
+    height: 300px;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+}
+.dl1-list{
+    float: left;
+    width:230px;
+    margin-right: 28px;
+}
+.dl2-list{
+    float: left;
+    width:210px;
+    margin-right: 28px;
+}
+.dl3-list{
+    float: left;
+    width:144px;
+    line-height: 16px;
+}
+.article1-box dt{
+    margin-bottom: 5px;
+}
+.a-title-box{
+    font-size: 16px;
+    text-decoration: underline;
+}
+.a-title1-box{
+    color: #418d5e;
+}
+.a-title2-box{
+    color: #d2994f;
+}
+.a-title3-box{
+    color: #cd4a4a;
+}
+.num-box{
+    margin-top:10px;
+}
+.num-box i{
+    color: #cd4a4a;
+}
+
+.article1-right-box{
+    width: 205px;
+    border-top:2px solid #cc8091;
+    float: right;
+}
+.date-box a{
+    font-size: 24px;
+    color: #030000;
+    text-decoration: underline;
+    display: block;
+}
+.date-box i{
+    display: block;
+    color: #676867;
+    margin:5px 0;
+}
+.date-box .data-bold{
+    display: block;
+    font-size:104px;
+    color: #75b86c;
+    margin-top:25px;
+}
+
+.date2-box .span1{
+    display: block;
+    float: left;
+    font-size: 55px;
+    color: #cc8091;
+    overflow: hidden;
+}
+.date3-box{
+    float: left;
+    margin-top:22px;
+}
+.date3-box .css1{
+    font-size:21px;
+    color: #cc8091;
+}
+.css2{
+    color: #b5b5b5;
+}
+
+
+
+/*----------main-bottom-box----------*/
+.main-bottom-box{
+    overflow: hidden;
+    margin-top:60px;
+}
+.article2-left-box{
+    float: left;
+    width:417px;
+}
+.title-box{
+    border-bottom:2px solid #10456b;
+}
+.title-box h1 b{
+    font-size: 33px;
+    color: #11456b;
+    font-weight: bold;
+    margin-bottom:10px;
+    display: block;
+}
+.title-box h1 b i{
+    font-size:72px;
+    color: #f5e327;
+}
+.title-box h1 b span{
+    font-size:46px;
+    color: #11456b;
+    margin-left:35px;
+}
+.content-box{
+    margin-top:20px;
+    overflow: hidden;
+}
+.content-box .first-char{
+    font-size: 70px;
+    color: #f5e327;
+    float: left;
+    margin-right: 5px;
+    display: block;
+}
+.content-box p{
+    line-height: 20px;
+    color: #a6a2a1;
+}
+.content-box .bg1{
+    background: url(../imgs/2.jpg) no-repeat;
+    width:168px;
+    height:280px;
+    display: block;
+    float: right;
+    margin-right:10px;
+    margin-top:15px;
+}
+.p-name1{
+    width:220px;
+    float: left;
+    margin-right:16px;
+}
+.span3{
+    display: block;
+    text-indent:2em;
+}
+.p-name2{
+    text-indent: 2em;
+    float: left;
+}
+
+.article2-right-box{
+    float: right;
+    width:459px;
+}
+.right-top-box{
+    position: relative;
+    margin-bottom:30px;
+}
+.right-top-box a{
+    display: block;
+}
+.right-top-box img{
+    width:459px;
+    height:275px;
+}
+.remark-box{
+    width:459px;
+    height:60px;
+    background: #867e78;
+    position:absolute;
+    opacity:0.9;
+    overflow: hidden;
+    bottom:0;
+}
+.remark-box span{
+    display: inline-block;
+    width:2px;
+    height:47px;
+    line-height:47px;
+    background: #72b069;
+    margin-top:5px;
+    float: left;
+    margin-left:30px;
+}
+.remark-box h3{
+    font-size:26px;
+    color: #fff;
+    line-height: 60px;
+    float: left;
+    margin:0 8px 0 12px;
+}
+.remark-box i{
+    float: left;
+    color: #72b069;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.right-bottom-box{
+    background: #eeedd6;
+    overflow: hidden;
+}
+.cont3-bottom-box{
+    margin:25px 20px 20px 30px;
+}
+.cont3-bottom-box li{
+    background: url(../imgs/icon-1.png) no-repeat left center;
+    padding-right:5px;
+    line-height: 40px;
+    width:408px;
+}
+.cont3-bottom-box li a{
+    color: #6c6a67;
+    margin-left:15px;
+    font-size:16px;
+}
+.cont3-bottom-box li span{
+    float: right;
+    color: #6c6a67;
+}
+.content4-left-box{
+    width:260px;
+    height:160px;
+    background: #D35D5B;
+    float: left;
+    color: #FFF;
+}
+.content4-left-box .num2-box{
+    font-size:110px;
+    float: left;
+    line-height:160px;
+    padding:0 3px 0 10px;
+}
+.content4-left-box span{
+    display: block;
+    width: 2px;
+    height:86px;
+    margin-top:37px;
+    float: left;
+    background: #FFF;
+}
+.content4-box{
+    margin:40px 10px 40px 76px;
+    font-size:14px;
+}
+.p-name3{
+    font-size:21px;
+}
+.content4-right-box{
+    margin-top: 20px;
+    width:168px;
+    float: left;
+    overflow: hidden;
+    padding:0 15px;
+}
+.icon-2{
+    background: url(../imgs/icon-2.png) repeat-x;
+    width:20px;
+    height:22px;
+    float: left;
+    display: block;
+    margin-right:22px;
+}
+.icon-3{
+    background: url(../imgs/icon-3.png) repeat-x;
+    width:20px;
+    height:22px;
+    float: right;
+    display: block;
+}
+.content4-right-box p{
+    font-size:14px;
+}
+
+/*footer start*/
+.footer-box{
+    height:50px;
+}
+.footer-box a{
+    margin-top: 3px;
+    float: right;
+    color: #de5d5c;
+    font-size: 12px;
+}
