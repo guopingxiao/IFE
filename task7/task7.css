@@ -1,0 +1,801 @@
+html,body,p,h1,h2,h3,ul,li,textarea,article,footer,section,header{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    min-width: 1080px;
+    font-family: "微软雅黑";
+    font-size:14px;
+    color: #000;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background: #FFF;
+    padding-top:14px;
+    box-sizing: border-box;
+}
+.header-left{
+    float: left;
+    margin-left:5%;
+    width:150px;
+    line-height:40px;
+}
+.header-left a{
+    text-decoration: none;
+}
+.header-left img{
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+.header-left span{
+    font-size: 22px;
+    margin-left: 25px;
+    font-weight: bold;
+    color:#000;
+    opacity: 0.8;
+}
+.header-right{
+    float: right;
+    width:700px;
+    height:60px;
+    line-height: 30px;
+}
+.header-right ul li{
+    float: left;
+    display: inline-block;
+    width:100px;
+    height: 40px;
+    margin-right:4px;
+    text-align: center;
+    cursor: pointer;
+}
+.header-right ul li a{
+    text-decoration: none;
+    opacity: 0.8;
+    color: #000;
+}
+.header-right ul li:hover{
+    color: #e74f4d;
+    border-bottom:4px solid #d4545c;
+}
+.header-right ul li:first-child{
+    width:80px;
+    border-bottom: 4px solid #d4545c;
+}
+.header-right ul li:last-child{
+    margin-right:25px;
+}
+.header-right > a{
+    font-size:16px;
+    position: relative;
+    color: #e74f4d;
+    text-decoration: none;
+    top:-2px;
+}
+
+.container{
+    width:100%;
+}
+.section1{
+    width:100%;/*背景图片的宽高怎么设置？*/
+    height:500px;
+    background-image: url(./imgs/img01.jpg);
+    background-size: cover;
+    padding-left:5%;
+    padding-top:5%;
+    color: #FFF;
+    box-sizing: border-box;
+}
+.section1 h1{
+    font-family:"微软雅黑";
+    font-size: 60px;
+    font-weight: normal;
+}
+.section1 p{
+    font-size: 24px;
+    width:350px;
+    margin:20px 0 60px 10px;
+    font-weight: lighter;
+}
+.section1 a{
+    display: block;
+    width:350px;
+    height:60px;
+    line-height:60px;
+    text-decoration: none;
+    font-size:30px;
+    text-indent: 115px;
+    background-color: #e74f4d;
+    color: #FFF;
+    font-weight: lighter;
+}
+.section1 a:hover{
+    background-color: #e87775;
+}
+
+.section2{
+    width:100%;
+    height:300px;
+}
+.section2 > span{
+    display: inline-block;
+    float: left;
+    width:25%;
+    height:150px;
+    position: relative;
+    box-sizing: border-box;
+}
+.section2 > span > img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-21px;
+}
+.section2 p{
+    display: inline-block;
+    width:25%;
+    height:55px;
+    text-align: center;
+    color: #767777;
+    border-left:2px solid #767777;
+    box-sizing: border-box;
+    float: left;
+}
+.section2 p:first-of-type{
+    border:none;
+}
+.section2  p span{
+    display: inline-block;
+    width:190px;
+}
+
+.section3{
+    width:100%;
+    height:400px;
+    background-color: #ECECEA;
+    position: relative;
+}
+.section3 > img{
+    width:92px;
+    height:92px;
+    margin-left:56px;
+    position: absolute;
+    left:50%;
+    top:100px;
+}
+.section3 > p{
+    margin:0 auto;
+    color: #767777;
+    font-size: 50px;
+    position: relative;
+    top:220px;
+    text-align: center;
+}
+
+.section4{
+    width:100%;
+    position: relative;
+    height:400px;
+}
+.section4 .background{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image: url(./imgs/bg_map.jpg);
+    background-size:cover;
+    z-index: 1;
+}
+.background::before{
+    content: '';
+    display: block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.1);
+    z-index:1;
+}
+.section4 .title{
+    position: absolute;
+    width:450px;
+    margin-left:-225px;
+    left:50%;
+    height:105px;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+.title h2{
+    font-size: 25px;
+    padding-top: 50px;
+    margin-bottom:35px;
+}
+.title h2::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:40px;
+    margin-left:-20px;
+    border-bottom:3px solid #fff;
+    top:90px;
+    left:50%;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+.title:hover> h2:after{/*和上面配合实现动画*/
+    margin-left:-143px;
+    width:285px;
+    left:50%;
+}
+.section4 .select-area{
+    display: flex;
+    flex-flow: row;
+    width:90%;
+    height:40px;
+    position: absolute;
+    left:5%;
+    top:200px;
+    z-index:10;
+}
+.section4 .select-area .select, .section4 .select-area a{
+    flex:1;
+    margin:0 20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    background: #fff;
+    cursor: pointer;
+}
+.section4 .select-area .select{
+    box-sizing: border-box;
+    font-size:18px;
+    color: rgba(0,0,0,0.6);
+    background: #fff url("./imgs/dropdown.png") no-repeat right 10px center;
+}
+.section4 .select-area .select:hover{
+    outline: #e74f4d solid 2px;
+}
+.section4 .select-area .select:focus{
+    outline: #e74f4d solid 2px;
+}
+.section4 .select-area .select span{
+    height:40px;
+    line-height:40px;
+    padding-left:5%;
+}
+.section4 .select-area .select ul{
+    list-style-type: none;
+    display: none;
+    width:100%;
+    box-sizing:border-box;
+    outline:#e74f4d;
+    background-color: #ededed;
+}
+.section4 .select-area .select ul li{
+    height:25px;
+    line-height: 25px;
+    text-indent: 10%;
+    position: relative;
+}
+.section4 .select-area .select ul li:hover{
+    background-color: #e74f4d;
+}
+.section4 .select-area .select ul li img{
+    display: none;
+    width:12px;
+    height:12px;
+    position: absolute;
+    left:12px;
+    top:4px;
+}
+.section4 .select-area .select ul li:hover > img{
+    display: block;
+}
+.section4 .select-area .select:focus > ul {
+    outline: #e74f4d solid 1px;
+    display: block;
+}
+.section4 .select-area a{
+    background: #e74f4d;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 25px;
+    text-indent: 1em;
+}
+.section4 .select-area a:hover{
+    background: #e87775;
+}
+
+.section5{
+    width:100%;
+    position: relative;
+    height:700px;
+    background-color: #eee;
+}
+.section5 .action-container{
+    width:85%;
+    display: flex;
+    flex-flow: row;
+    height:90%;
+    position: absolute;
+    left:8%;
+}
+.section5 .action-container .action-area{
+    flex:1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;/*这里也要display*/
+}
+.section5 .action-container .action-area .action{
+    width: 300px;
+    height:460px;/*用img填充这个盒子*/
+    border:1px solid #eee;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    background: #fff;
+}
+.section5 .action-container .action-area .action img{
+    width: 284px;
+    margin: 12px 8px 12px 8px;
+}
+.section5 .action-container .action-area .action .action-desc{
+    margin-top: 15px;
+    text-align: center;
+}
+.section5 .action-container .action-area .action .action-desc h3{
+    font-size: 20px;
+    margin-bottom:5px;
+}
+.section5 .action-container .special{/*先把img调整到位*/
+    position: relative;
+    top:65px;
+}
+.section5  .special .action-desc{ /*在调整content*/
+    position: absolute;
+    top:0;
+}
+.section5  .special .action-desc h3{/*文本两端对齐*/
+    display: inline-block;
+    width:300px;
+    text-align: justify;
+    text-align-last: justify;
+    height:32px;
+    font-size: 28px;
+}
+/*
+.section5 .special .action-desc h3::after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    display: inline-block;
+}*/
+
+.section6{
+    position: relative;
+    width:100%;
+    height:600px;
+}
+.section6 .left-part{
+    width:66.7%;
+    height:600px;
+    background-image: url("./imgs/img02.jpg");
+    background-size:cover;
+    float: left;
+    position: relative;
+    color: #fff;
+}
+.section6 .left-part h3{
+    margin-top:10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight:normal;
+}
+.section6 .left-part h2{
+    text-align: center;
+    font-size: 100px;
+    margin:0 auto;
+    font-weight:normal;
+    font-family:"微软雅黑";
+}
+.section6 .left-part p{
+    font-size:24px;
+    text-align: center;
+    margin-top:10px;
+}
+.section6 .left-part::after{/*制作右边的三角形*/
+    content: '';
+    position: absolute;
+    top:50%;
+    margin-top:-20px;
+    right:0;
+    width:0;
+    height:0;
+    border:20px solid;
+    border-color:transparent #fff transparent transparent;
+}
+.section6 .right-part{
+    width:33.3%;
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+}
+.section6 .right-part h2{
+    font-size: 30px;
+    padding-top:30%;
+    text-align: center;
+    font-weight:normal;
+}
+.section6 .right-part h2 span{
+    color: #e74f4d;
+}
+.section6 .right-part p{
+    line-height: 30px;
+    margin-top: 20px;
+    padding:0 15%;
+    text-align: left;
+    opacity:0.5;
+    font-size: 16px;
+}
+.section6 .right-part a{
+    display: block;
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    color: #e74f4d;
+    font-size:20px;
+    border:1px solid #e74f4d;
+    margin:60px auto 20px auto;
+    text-decoration: none;
+    text-align: center;
+}
+.section6 .right-part a:hover{
+    color: #fff;
+    background-color: #e74f4d;
+}
+.section6 .right-part ul{
+    width:80px;
+    height:24px;
+    margin:0 auto;
+}
+.section6 .right-part ul li{/*list-style-type list-style-position list-style-image*/
+    list-style: circle inside;
+    float: left;
+    position: relative;
+    width:24px;
+}
+.section6 .right-part ul li:first-child{
+    list-style: disc inside;
+}
+.section6 .right-part ul li:hover{
+    cursor: pointer;
+}
+
+.section7{/**/
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-flow:row;
+    /*background-image: url("./imgs/img03.jpg");*/
+}
+.section7 .left{
+    flex:1;
+    background: #e74f4d;
+    position: relative;
+    color: #fff;
+}
+.section7 .left h3, .section7 .middle h3{
+    font-size: 20px;
+    padding-top:20%;
+    line-height:40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight:normal;
+}
+.section7 .left h3::after, .section7 .middle h3::after{
+    content: '';
+    display: block;
+    width:50px;
+    position: relative;
+    left:50%;
+    margin-left: -20px;
+    margin-top: 10px;
+    -webkit-transition: all 1s;
+}
+.section7 .left h3::after{
+    border-bottom:3px solid #fff;
+}
+.section7 .middle h3::after{
+    border-bottom:3px solid #000;
+}
+.section7 .left:hover > h3::after, .section7 .middle:hover > h3::after{
+    width:150px;
+    left:50%;
+    margin-left:-75px;
+}
+.section7 .left a, .section7 .middle a{
+    text-decoration: none;
+    display: block;
+    width:150px;
+    height:40px;
+    line-height: 40px;
+    margin:50px auto;
+    text-align: center;
+    font-size:18px;
+}
+.section7 .left a{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.section7 .left a:hover{
+    color: #000;
+    background-color: #fff;
+}
+.section7 .middle a:hover{
+    color: #fff;
+    background-color: #e74f4d;
+}
+.section7 .middle a{
+    color: #e74f4d;
+    border:1px solid #e74f4d;
+}
+.section7 .middle{
+    flex:1;
+    position: relative;
+}
+.section7 .middle::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    margin-top: -20px;
+    border:20px solid ;
+    border-color: transparent transparent transparent #fff;
+}
+.section7 .right{
+    flex:1;
+}
+.section7 .right img{
+    max-width: 100%;
+    height:100%;
+}
+
+.section8{
+    width:100%;
+    height:900px;
+}
+.section8 .form-title{
+    width:100%;
+    padding-top:10%;
+    text-align: center;
+}
+.section8 .form-title h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.section8 .form-title h3::after{
+    content: '';
+    display: block;
+    width:40px;
+    border-bottom:3px solid #e74f4d;
+    position: relative;
+    left:50%;
+    margin:20px auto 35px -20px;
+    -webkit-transition: all 2s;
+}
+.section8 .form-title:hover > h3::after{
+    width:200px;
+    margin-left:-100px;
+}
+.section8 .form-title p{
+    opacity:0.6;
+    font-size: 20px;
+}
+.section8 .form-content{
+    width:80%;
+    margin:100px auto;
+    display: flex;
+    flex-flow: row;
+}
+.section8 .form-left{
+    flex:1;
+    display: flex;
+    flex-flow:column;
+}
+.section8 .form-left article{
+    flex:1;
+    width:80%;
+    position: relative;
+}
+
+.section8 .form-left article::after{
+    opacity:0.6;
+    content: 'more';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom:5px;
+    width:70px;
+    height: 24px;
+    text-align: center;
+    cursor: pointer;
+    background: url("./imgs/more.png") no-repeat 0 8px ;
+
+}
+.section8 .form-left article header{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.section8 .form-left article p{
+    opacity:0.6;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    margin-top:20px;
+    /*height:45px;*/
+    overflow: hidden;
+    /*-webkit-line-clamp: 2;!*限制文本行数*!*/
+    -webkit-box-orient: vertical;/*限制文本排列*/
+}
+.section8 .from-right{
+    flex:2;
+    padding-left: 40px;
+    margin-top: 0px;
+}
+.section8 .from-right label{
+    display: inline-block;
+    position: relative;
+    width:48%;
+    height:45px;
+    margin: 0 2% 2% 0;
+    float: left;
+}
+.section8 .from-right label input{
+    background: #eee;
+    width:100%;
+    height:46px;
+    border:none;
+    font-size: 18px;
+}
+.section8 .from-right label span{
+    position: absolute;
+    font-size: 18px;
+    top:13px;
+    left:1em;
+    opacity:0.8;
+}
+.section8 .from-right form label:nth-child(1) input{
+    text-indent: 4em;
+}
+.section8 .from-right form label:nth-child(2) input{
+    text-indent: 4em;
+}
+.section8 .from-right form label:nth-child(3) input{
+    text-indent: 6em;
+}
+.section8 .from-right form label:nth-child(4) input{
+    text-indent: 6em;
+}
+.section8 .from-right form label:nth-child(5) {
+    width:98%;
+    height:200px;
+    position: relative;
+}
+.section8 .from-right textarea{
+    width:100%;
+    height:100%;
+    background: #eee;
+    text-indent: 13em;
+    float: left;
+    border:none;
+    line-height: 48px;
+    font-size: 18px;
+}
+.section8 .from-right .form-submit{
+    width:98%;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    background: #eee;
+    position: relative;
+}
+.section8 .from-right .form-submit:hover{
+    background: #e74f4d;
+    cursor: pointer;
+}
+.section8 .from-right .form-submit a{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 45px;
+    color: #000;
+}
+
+.section9{
+    width:100%;
+    height:450px;
+    background-color: #32353e;
+    color: #fff;
+}
+.section9 h2{
+    width:100px;
+    padding-top:100px;
+    margin:5px auto;
+}
+.section9 p{
+    width:600px;
+    line-height: 30px;
+    font-size: 16px;
+    margin:5px auto;
+    text-align: center;
+}
+.section9 label{
+    display: block;
+    width: 600px;
+    height: 40px;
+    margin: 40px auto;
+}
+.section9 input[type="email"]{
+    width: 85%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    text-indent: 1em;
+}
+.section9 label a{
+    width: 15%;
+    height: 100%;
+    background-color: #6f7178;
+    border: 1px solid #6f7178;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.section9 ul{
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: justify;
+}
+.section9 ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin-right:25px;
+}
+.section9 ul .break{
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: #2f2f38;
+    font-size: 14px;
+    color: #fff;
+}
+footer span{
+    padding-left: 6%;
+}
+footer a{
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+    text-decoration: none;
+    color: inherit;
+}
