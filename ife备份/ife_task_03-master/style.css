@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/*圣杯布局*/
+#wrapped {
+    padding: 20px 160px 20px 240px;
+    background: #eee;
+    border: 1.5px #999 solid;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.team {
+    width: 200px;
+    border: 1.5px #999 solid;
+    padding: 1em;
+    margin-left: -220px;
+    float: left;
+}
+
+.team-logo {
+    border: 1.5px #999 solid;
+    width: 80px;
+    height: 80px;
+    box-sizing: content-box;
+    float: left;    
+}
+
+.team h3 {
+    font-size: 1.25em;
+    float: left;
+}
+
+.member {
+    width: 120px;
+    border: 1.5px #999 solid;
+    padding: 1.5em 0;
+    float: right;
+    margin-right: -140px;
+}
+
+.team-intro {
+    border: 1.5px #999 solid;
+    padding: 1.7em 1.2em;
+    width: 100%;
+    float: left;    
+}
+
+ul {
+    margin: 0 auto;
+    width: 83px;
+}
+
+ul li {
+    display: block;
+    width: 80px;
+    height: 80px;
+    box-sizing: content-box;
+    margin-bottom: 1.4em;
+    border: 1.5px #999 solid;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
